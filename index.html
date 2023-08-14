@@ -3,8 +3,29 @@
 	<head>
 		<title>Jaka Kovač</title>
 		<link rel="stylesheet" href="style.css">
+		<script>
+			function lightMode(){
+				console.log("HELP ME")
+				document.getElementById("body").innerHTML = `
+				<p id="bastard">
+					YOU BASTARD. NO LIGHT MODE FOR YOU AS IT SHOULD BE. <br><br> 
+					<b>FOR EVER</b>
+				</p>
+				<img id="bas-img" src="fire2.gif">
+
+				`
+			}
+		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1 id="greeting">Hello world!</h1>
+		<div id="body">
+			<div id="title">
+				<p id="greeting">Hello world!</p>
+				<button id="mode" onClick="lightMode();">Light mode</button>
+			</div>
+		</div>
 	</body>
 </html>

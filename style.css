@@ -1,6 +1,37 @@
-#greeting{
-	font-style: monospace;
-	font-weight: 900;
-	font-size: 4vh;
-	text-align: center;
+body{
+	background-color: #202020;
+	color: white;
 }
+
+#bastard{
+	font-style: comic-sans;
+	font-size: 3vw;
+}
+
+#bas-img{
+	float: right;
+	width: 30vw;
+}
+
+#greeting{
+	font-family: 'VT323', monospace;
+	font-size: 5vh;
+	margin: unset;
+	text-align: center;
+	width: 100%;
+}
+
+#title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#mode{
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
