@@ -6,6 +6,10 @@
 		<script>
 			function lightMode(){
 				console.log("HELP ME")
+				let now = new Date()
+				now.setTime(now.getTime() + 1000*36000) 
+				document.cookie = "mode=light; expires=" + now.toUTCString() + ";path=/"
+				console.log(document.cookie)
 				document.getElementById("body").innerHTML = `
 				<p id="bastard">
 					YOU BASTARD. NO LIGHT MODE FOR YOU AS IT SHOULD BE. <br><br> 
@@ -40,5 +44,8 @@
 			</tbody>
 			</table>
 		</div>
+		<script>
+			if(document.cookie.includes("mode=light")){lightMode();}
+		</script>
 	</body>
 </html>
