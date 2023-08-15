@@ -4,11 +4,11 @@ body{
 	color: white;
 	margin: 2vh 2vw;
 	font-family: 'VT323', monospace;
+	font-size: 3vh;
 }
 
 #bastard{
 	font-style: comic-sans;
-	font-size: 3vw;
 }
 
 #bas-img{
@@ -50,7 +50,6 @@ body{
 	width: 16%;
 	border-style: solid;
 	border-width: 0px;
-	font-size: 3vh;
 	overflow: hidden;
 	padding: 10px 5px;
 	word-break: normal;
