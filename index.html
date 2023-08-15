@@ -8,12 +8,12 @@
 				console.log("HELP ME")
 				let now = new Date()
 				now.setTime(now.getTime() + 1000*36000) 
-				document.cookie = "mode=light; expires=" + now.toUTCString() + ";path=/"
+				document.cookie = "mode=light; expires=" + now.toUTCString() + ";"
 				console.log(document.cookie)
 				document.getElementById("body").innerHTML = `
 				<p id="bastard">
 					YOU BASTARD. NO LIGHT MODE FOR YOU AS IT SHOULD BE. <br><br> 
-					<b>FOR EVER</b>
+					<b>FOREVER</b>
 				</p>
 				<img id="bas-img" src="fire2.gif">
 
@@ -31,51 +31,53 @@
 				<button id="mode" onClick="lightMode();">Light mode</button>
 			</div>
 			<div style="height: 30px;"></div>
-			<table class="projects">
-			<tbody>
-				<tr>
-					<td>FIRST (Global|Tech) Challenge</td>
-					<td>VegaSat 2023</td>
-					<td>European Cybersecurity Challenge</td>
-					<td>BlackBox</td>
-					<td>Noordung Labs</td>
-					<td>Vegovacraft courses</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://firstglobal.si">firstglobal.si</a><br>
-						<a href="https://firstinspires.org">firstinspires.org</a>
-					</td>
-					<td><a href="https://cansat.si">cansat.si</a></td>
-					<td>
-						<a href="https://kibertalent.si">kibertalent.si</a><br>
-						<a href="https://ecsc.eu">ecsc.eu</a>
-					</td>
-					<td></td>
-					<td></td>
-					<td><a href="https://github.com/insightfulbriyan/Vegovacraft-2020_2021">github.com</a></td>
-				</tr>
-				<tr>
-					<td><img class="projpic" src="https://firstglobal.si/wp-content/uploads/2023/02/swag-IMG_1508-2048x1536.jpg" /></td>
-					<td><img class="projpic" src="https://cdn.discordapp.com/attachments/968765998511575093/1140759112632774656/image0.jpg" /></td>
-					<td><img class="projpic" src="ecsc.jpg" /></td>
-					<td></td>
-					<td><img class="projpic" src="noordung_labs.png" /></td>
-					<td><img class="projpic" src="https://oblak.nejckrasevec.si/s/HKJeLKC9YioCnpg/download?path=&files=20221223_125918.jpg" ></td>
-				</tr>
-				<tr>
-					<td>FIRST is this awesome community of over half a million young people on a mission to spread the excitement of STE(A)M values worldwide. As a student, I've actively engaged in over 10 FIRST competitions and represented Team Slovenia and Team VegaMind#22903 on the global stage.</td>
-					<td>CanSat is this cool competition put together by the European Space Agency (ESA), where high schoolers get to create their mini satellites and accomplish a mission of profound scientific significance.</td>
-					<td>ECSC is a competition where 5 young adults (20 - 25 years old) and 5 students (15 - 20 years old) get to show off their smarts in Jeopardy and AD CTF against other talented teams from Europe.</td>
-					<td>Presenting a robust solution for high-security door access control, this innovative system expertly integrates DESFire cards, ESP32 readers, and a central RPi server, ensuring unparalleled protection for even the most fortified locations.</td>
-					<td>Ever thought about making your rocket? That's exactly what me and my buddies are up to. We're all about designing, making, testing, and then doing it all over again to perfect our very own rocket.</td>
-					<td>Over the past two years, I've been leading beginner-friendly Arduino course and lending a hand in teaching folks about Git. Plus, I dived into a Blender course and got my hands on Autodesk Inventor – learning's been a blast!</td>
-				</tr>
-			</tbody>
-			</table>
+			<div class="table-container">
+				<table class="projects">
+				<tbody>
+					<tr>
+						<th>FIRST (Global|Tech) Challenge</th>
+						<th>VegaSat 2023</th>
+						<th>European Cybersecurity Challenge</th>
+						<th>BlackBox</th>
+						<th>Noordung Labs</th>
+						<th>Vegovacraft courses</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://firstglobal.si">firstglobal.si</a><br>
+							<a href="https://firstinspires.org">firstinspires.org</a>
+						</td>
+						<td><a href="https://cansat.si">cansat.si</a></td>
+						<td>
+							<a href="https://kibertalent.si">kibertalent.si</a><br>
+							<a href="https://ecsc.eu">ecsc.eu</a>
+						</td>
+						<td></td>
+						<td></td>
+						<td><a href="https://github.com/insightfulbriyan/Vegovacraft-2020_2021">github.com</a></td>
+					</tr>
+					<tr>
+						<td><img class="projpic" src="first.jpg" /></td>
+						<td><img class="projpic" src="cansat.jpg" /></td>
+						<td><img class="projpic" src="ecsc.jpg" /></td>
+						<td></td>
+						<td><img class="projpic" src="noordung_labs.png" /></td>
+						<td><img class="projpic" src="vc.jpg" ></td>
+					</tr>
+					<tr>
+						<td>FIRST is this awesome community of over half a million young people on a mission to spread the excitement of STE(A)M values worldwide. As a student, I've actively engaged in over 10 FIRST competitions and represented Team Slovenia and Team VegaMind#22903 on the global stage.</td>
+						<td>CanSat is this cool competition put together by the European Space Agency (ESA), where high schoolers get to create their mini satellites and accomplish a mission of profound scientific significance.</td>
+						<td>ECSC is a competition where 5 young adults (20 - 25 years old) and 5 students (15 - 20 years old) get to show off their smarts in Jeopardy and AD CTF against other talented teams from Europe.</td>
+						<td>Presenting a robust solution for high-security door access control, this innovative system expertly integrates DESFire cards, ESP32 readers, and a central RPi server, ensuring unparalleled protection for even the most fortified locations.</td>
+						<td>Ever thought about making your rocket? That's exactly what me and my buddies are up to. We're all about designing, making, testing, and then doing it all over again to perfect our very own rocket.</td>
+						<td>Over the past two years, I've been leading beginner-friendly Arduino course and lending a hand in teaching folks about Git. Plus, I dived into a Blender course and got my hands on Autodesk Inventor – learning's been a blast!</td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
 			<div style="height: 50px;"></div>
 			<div id="people">
-				<p>People I know with internet presence:</p>
+				<p>People I know with an internet presence:</p>
 				<ul class="people">
 					<li><a href="https://aikenahac.com">Aiken <b>Tine</b> Ahac</a></li>
 					<li><a href="http://sijanec.eu/">Anton Luka Šijanec</a></li>
@@ -88,7 +90,7 @@
 			</div>
 		</div>
 		<script>
-			if(document.cookie.includes("mode=light")){lightMode();}
+			if(document.cookie.includes("mode=light")){lightMode()}
 		</script>
 	</body>
 </html>
