@@ -3,6 +3,7 @@ body{
 	background-color: #202020;
 	color: white;
 	margin: 2vh 2vw;
+	font-family: 'VT323', monospace;
 }
 
 #bastard{
@@ -16,7 +17,6 @@ body{
 }
 
 #greeting{
-	font-family: 'VT323', monospace;
 	font-size: 7vh;
 	margin: unset;
 	text-align: center;
@@ -50,12 +50,21 @@ body{
 	width: 16%;
 	border-style: solid;
 	border-width: 0px;
-	font-family: Arial, sans-serif;
-	font-size: 14px;
+	font-size: 3vh;
 	overflow: hidden;
 	padding: 10px 5px;
 	word-break: normal;
 	border-color: #333333;
 	text-align: center;
 	vertical-align: top;
+	align-items: center;
+}
+
+.projpic{
+	vertical-align: middle;
+	display: inline;
+	width: 14vw;
+	height: 16vh;
+	overflow: hidden;
+	object-fit: cover;
 }
