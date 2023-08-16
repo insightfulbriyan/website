@@ -41,7 +41,7 @@ a:hover {
 	background-color: #007bff;
 	color: white;
 	border: none;
-	padding: 10px 20px;
+	padding: 1.5vh 1vw;
 	cursor: pointer;
 }
 
@@ -85,7 +85,7 @@ a:hover {
 .narrow-projpic{
 	width: 100%;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1010px) {
 	#wide-table{
 		display: none;
 	}
@@ -93,5 +93,9 @@ a:hover {
 	#narrow-table{
 		display: inherit;
 		width: 100%;
+	}
+
+	#mode{
+		padding: 1.5vh 1.5vw;
 	}
 }
