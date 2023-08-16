@@ -85,7 +85,7 @@ a:hover {
 .narrow-projpic{
 	width: 100%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	#wide-table{
 		display: none;
 	}
